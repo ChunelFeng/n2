@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -std=c++11 -fopenmp  -I../src -O3 -mavx -Wall
+CXXFLAGS = -std=c++11 -Xpreprocessor -fopenmp  -I../src -O3 -mavx -Wall
 #CXXFLAGS = -std=c++11 -fopenmp -I /usr/local/include/eigen3 -I./src -O3 -Wall
 CXXFLAGS += -I /usr/local/include/eigen3 -I../third_party/json11/ -I../third_party/spdlog/include -I../third_party/catch/include
 

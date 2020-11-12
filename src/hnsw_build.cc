@@ -236,7 +236,7 @@ template<typename DistFuncType>
 HnswBuildImpl<DistFuncType>::HnswBuildImpl(int dim, DistanceKind metric) : HnswBuild(dim, metric) {
     logger_ = spdlog::get("n2");
     if (logger_ == nullptr) {
-        logger_ = spdlog::stdout_logger_mt("n2");
+        //logger_ = spdlog::stdout_logger_mt("n2");
     }
 }
 
